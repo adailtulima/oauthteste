@@ -1,0 +1,11 @@
+version: '2'
+services:
+    oauthteste-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/oauthteste/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=oauthteste
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
